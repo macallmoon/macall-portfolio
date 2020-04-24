@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact Page  |  Macall Tanner</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page  |  Macall Tanner</title>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <!--fontawesome-->
-    <script src="https://kit.fontawesome.com/eb3094707d.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="container">
 
-    <!--navigation bar-->
-    <header>
-      <a href="index.html">
-        <img src="images/macall-logo.png" alt="Logo">
-      </a>
-      <a href="menu.html" class="mobile">
-        <img src="images/menu-mobile.png" alt="Navigation Menu">
-      </a>
-      <a href="index.html#work" class="desktop">
-        <h3>Work</h3>
-      </a>
-      <a href="about.html" class="desktop">
-        <h3>About</h3>
-      </a>
-      <a href="contact.html" class="desktop">
-        <h3>Contact</h3>
-      </a>
-    </header>
+      <!--background color box-->
+      <div class="background-box"></div>
 
-    <!--content section-->
-    <section>
-      <h2>Contact</h2>
-      <h4>“When all other means of communication fail, try words.”</h4>
-      <h5>- Anonymous</h5>
-      <a href="mailto:macall.tanner@gmail.com" class="fas fa-envelope">
-        <h5>macall.tanner@gmail.com</h5>
-      </a>
-      <a href="https://www.linkedin.com/in/macalltanner/" class="fab fa-linkedin">
-        <h5>linkedin.com/in/macalltanner/</h5>
-      </a>
-      <a href="https://www.github.com/macalltanner" class="fab fa-github">
-        <h5>github.com/macalltanner</h5>
-      </a>
-    </section>
+      <!--navigation bar-->
+      <header>
+        <a href="index.html">
+          <img class="logo" src="images/macall-logo.png" alt="Logo">
+        </a>
+        <a href="menu.html">
+          <img class="mobile menu-icon" src="images/menu-mobile.png" alt="Navigation Menu">
+        </a>
+        <a href="index.html#work" class="desktop">
+          <h3>Work</h3>
+        </a>
+        <a href="about.html" class="desktop">
+          <h3>About</h3>
+        </a>
+        <a href="contact.html" class="desktop">
+          <h3>Contact</h3>
+        </a>
+      </header>
 
-    <!--footer-->
-    <footer>
-      <a href="mailto:macall.tanner@gmail.com">
-        <h5>macall.tanner@gmail.com</h5>
-      </a>
-      <a href="https://www.linkedin.com/in/macalltanner/" class="fab fa-linkedin"></a>
-      <a href="https://www.github.com/macalltanner" class="fab fa-github"></a>
-    </footer>
+      <!--content section-->
+      <section class="contact-text">
+        <h2>Contact</h2>
+        <h4>“When all other means of communication fail, try words.”</h4>
+        <h5 class="right-align">- Anonymous</h5>
+        <a class="social-item" href="mailto:macall.tanner@gmail.com">
+          <img class="social-icon" src="images/icons/email.png" alt="email">
+          <h5>macall.tanner@gmail.com</h5>
+        </a>
+        <a class="social-item" href="https://www.linkedin.com/in/macalltanner/">
+          <img class="social-icon" src="images/icons/linkedin-white.png" alt="linkedin">
+          <h5>linkedin.com/in/macalltanner/</h5>
+        </a>
+        <a class="social-item" href="https://www.github.com/macalltanner">
+          <img class="social-icon" src="images/icons/github.png" alt="github">
+          <h5>github.com/macalltanner</h5>
+        </a>
+      </section>
 
+      <!--footer-->
+      <footer>
+        <a class="email" href="mailto:macall.tanner@gmail.com">
+          <h5>macall.tanner@gmail.com</h5>
+        </a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/macalltanner/">
+            <img class="linkedin" src="images/icons/linkedin.png" alt="linkedin">
+          </a>
+          <a href="https://www.github.com/macalltanner">
+            <img class="github" src="images/icons/github.png" alt="github">
+          </a>
+        </div>
+      </footer>
+
+    </div><!--end container div-->
   </body>
 </html>

@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio Menu  |  Macall Tanner</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Menu  |  Macall Tanner</title>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/eb3094707d.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="page-container">
 
-    <!--navigation bar-->
-    <header>
-      <a href="index.html">
-        <img src="images/macall-logo.png" alt="Logo">
-      </a>
-      <a href="menu.html">
-        <img src="images/menu-mobile.png" alt="Navigation Menu">
-      </a>
-    </header>
+      <div class="content-container">
 
-    <!--menu section-->
-    <section class="menu">
-      <a href="index.html#work">
-        <h2>Work</h2>
-      </a>
-      <a href="about.html">
-        <h2>About</h2>
-      </a>
-      <a href="contact.html">
-        <h2>Contact</h2>
-      </a>
-    </section>
+        <!--navigation bar-->
+        <header>
+          <a href="index.html">
+            <img class="logo" src="images/macall-logo.png" alt="Logo">
+          </a>
+          <a href="menu.html">
+            <img class="mobile menu-icon" src="images/menu-mobile.png" alt="Navigation Menu">
+          </a>
+        </header>
 
-    <!--footer-->
-    <footer>
-      <a href="mailto:macall.tanner@gmail.com">
-        <h5>macall.tanner@gmail.com</h5>
-      </a>
-      <a href="https://www.linkedin.com/in/macalltanner/" class="fab fa-linkedin"></a>
-      <a href="https://www.github.com/macalltanner" class="fab fa-github"></a>
-    </footer>
+        <!--menu section-->
+        <section class="menu">
+          <a class="menu-opt" href="index.html#work">
+            <h2>Work</h2>
+          </a>
+          <a class="menu-opt" href="about.html">
+            <h2>About</h2>
+          </a>
+          <a class="menu-opt" href="contact.html">
+            <h2>Contact</h2>
+          </a>
+        </section>
+
+      </div> <!--end content-container-->
+
+      <!--footer-->
+      <footer>
+        <a class="email" href="mailto:macall.tanner@gmail.com">
+          <h5>macall.tanner@gmail.com</h5>
+        </a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/macalltanner/">
+            <img class="linkedin" src="images/icons/linkedin.png" alt="linkedin">
+          </a>
+          <a href="https://www.github.com/macalltanner">
+            <img class="github" src="images/icons/github.png" alt="github">
+          </a>
+        </div>
+      </footer>
+
+    </div><!--end page-container div-->
 
   </body>
 </html>

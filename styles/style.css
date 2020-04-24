@@ -1,0 +1,829 @@
+/* universal styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.desktop {
+  display: none;
+}
+
+h1, h2, h3, h4 {
+  color: #464646;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+h5, h6 {
+  color: #464646;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* button */
+
+.button {
+  align-items: center;
+  background-color: #D0CBC6;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 24.9rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 90%;
+}
+
+/* footer management */
+
+.page-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.content-container {
+  padding-bottom: 10rem;
+}
+
+/*navigation bar*/
+
+header {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "logo menu";
+  grid-template-columns: 7fr 1fr;
+  padding: 2rem;
+}
+
+    .logo {
+      grid-area: logo;
+      width: 50px;
+    }
+
+    .menu-icon {
+      grid-area: menu;
+      padding-top: 1.5rem;
+    }
+
+/* footer */
+
+footer {
+  background-color: #D0CBC6;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+
+}
+
+    .email {
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+    }
+
+        .linkedin, .github {
+          padding: 1rem .5rem 0;
+          width: 3.4rem;
+        }
+
+/* home page */
+
+    /* hero section */
+
+    .hero-container {
+      background-image: url("../images/hero-w-filter.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      height: 66.7rem;
+      justify-content: flex-end;
+    }
+
+        /* hero text */
+
+        .hero-text {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          justify-content: flex-end;
+          padding: 2rem;
+          text-align: right;
+        }
+
+    /* featured work section */
+
+    .featured {
+      padding: 5rem 2rem;
+    }
+
+        /* featured project */
+
+        .feat-proj {
+          padding-top: 3rem;
+        }
+
+        .proj-imgs {
+          display: flex;
+          padding-bottom: 2rem;
+        }
+
+            /* image on left - adding space between images */
+
+            .left-img {
+              padding-right: 1rem;
+            }
+
+        .feat-proj > h5 {
+          padding-top: 1rem;
+        }
+
+/* menu page */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu-opt {
+  background-color: #F8F5F0;
+  display: flex;
+  flex-direction: column;
+  height: 6.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+  text-align: right;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* about page */
+
+    /* images */
+
+    .about-images {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-areas:
+        "one three three"
+        "two two four"
+        "two two five";
+      grid-template-columns: 3fr 1fr 4fr;
+      grid-template-rows: 23vh 13vh 13vh;
+    }
+
+        .one {
+          grid-area: one;
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+
+        .two {
+          grid-area: two;
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+
+        .three {
+          grid-area: three;
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+
+        .four {
+          grid-area: four;
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+
+        .five {
+          grid-area: five;
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+
+    /* about text */
+
+    .about-text {
+      padding: 2rem;
+    }
+
+        .about-text > h4 {
+          padding-bottom: .5rem;
+        }
+
+        .about-text > h2, .about-text > h5, .about-text > h4 {
+          padding-top: 2rem;
+        }
+
+        .about-text > .right-align {
+          padding-top: 0;
+          text-align: right;
+        }
+
+    /* favorite things */
+
+    .favorites {
+      background-color: #F8F5F0;
+      height: auto;
+      padding: 2rem 2rem 4rem;
+      padding-top: 3rem;
+      width: 100%;
+    }
+
+        .fav-items {
+          display: grid;
+          flex-direction: row;
+          grid-gap: 1rem;
+          grid-template-columns: 1fr 1fr;
+          padding-top: 2rem;
+        }
+
+            .column-1 {
+              align-items: flex-start;
+              display: flex;
+              flex-direction: column;
+            }
+
+            .column-2 {
+              align-items: flex-start;
+              display: flex;
+              flex-direction: column;
+            }
+
+                .fav {
+                  align-items: center;
+                  display: flex;
+                  flex-direction: row;
+                  padding-bottom: 1.5rem;
+                }
+
+                    .fav-img {
+                      padding-right: 1rem;
+                      width: 3.3rem;
+                    }
+
+/* contact page */
+
+.background-box {
+  background-color: #F8F5F0;
+  height: 12.5rem;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.contact-text {
+  padding: 0 2rem;
+}
+
+    .contact-text > h2 {
+      padding-bottom: 2rem;
+    }
+
+    .contact-text > h4 {
+      padding-bottom: .5rem;
+    }
+
+    .contact-text > .right-align {
+      padding-bottom: 2rem;
+      text-align: right;
+    }
+
+        .social-item {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 1.5rem;
+          text-decoration: none;
+        }
+
+            .social-icon {
+              padding-right: 1rem;
+              width: 3.3rem;
+            }
+
+/* Sugar prject page */
+
+.box {
+  background-color: #F8F5F0;
+}
+
+.box-half {
+  background-color: #F8F5F0;
+  height: 4.5rem;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-top-margin {
+  margin-top: 2rem;
+}
+
+    /* project hero */
+
+    .proj-hero-img {
+      padding: 2rem 2rem 0;
+    }
+
+    .proj-hero-text {
+      padding: 0 2rem;
+    }
+
+    .proj-hero-text > h2 {
+      padding-top: 1rem;
+    }
+
+    .proj-hero-text > h4 {
+      padding: .5rem 0;
+    }
+
+    .proj-description {
+      padding-top: 1rem;
+    }
+
+    /* specs */
+
+    .spec-section >h4 {
+      padding: 2rem 0 1rem;
+    }
+
+    /* problem & solution */
+
+    .prob-sol {
+      padding: 2rem 2rem 3rem;
+      /* padding: 2rem 0; */
+    }
+
+    .prob-sol > h3 {
+      padding-top: 1rem;
+    }
+
+    .prob-sol > h5 {
+      padding: 1rem 0;
+    }
+
+    /* jump to section */
+
+    .jump {
+      background-color: #F8F5F0;
+    }
+
+    .jump-content {
+      background-color: #F8F5F0;
+      height: auto;
+      padding: 2rem 2rem .5rem;
+      width: 100%;
+    }
+
+        .section-links {
+          display: grid;
+          flex-direction: row;
+          grid-gap: 1rem;
+          grid-template-columns: 1fr 1fr;
+          padding-top: 1.5rem;
+        }
+
+            .column-1 {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .column-2 {
+              display: flex;
+              flex-direction: column;
+            }
+
+                .sect {
+                  align-items: center;
+                  display: flex;
+                  flex-direction: row;
+                  padding-bottom: 1.5rem;
+                  text-decoration: none;
+                }
+
+                    .sect-img {
+                      padding-right: 1rem;
+                      width: 3.3rem;
+                    }
+
+    /* case study sections */
+
+    .main-section > h3 {
+      padding: 5rem 2rem 0;
+    }
+
+    .minor-section {
+      padding: 0 2rem 1rem;
+    }
+
+    .minor-section > h4 {
+      padding: 2rem 0 1.5rem;
+    }
+
+    .bg-box {
+      padding-top: 2rem;
+    }
+
+    .img-width {
+      padding-top: 2rem;
+      width: 100%;
+    }
+
+    .shadow {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .h5-bottom-pad > h5 {
+      padding-bottom: 2rem;
+    }
+
+    /* research & discovery */
+
+        /* competitive analysis */
+
+        .comp-analysis {
+          padding: 2rem 0 0;
+        }
+
+        .comp-analysis > h5 {
+          padding-top: 1rem;
+        }
+
+        .ca-img {
+          padding-bottom: .5rem;
+          width: 7.7rem;
+        }
+
+        /* survey */
+
+        .survey-result {
+          align-items: center;
+          display: flex;
+          padding: .75rem 0;
+        }
+
+        .survey-result > h3 {
+          padding-right: 1rem;
+          width: 7.6rem;
+        }
+
+        .survey-result > h5 {
+          width: 24.9rem;
+        }
+
+        .survey-box {
+          height: 77rem;
+        }
+
+        .survey-text {
+          padding-bottom: .75rem;
+        }
+
+        /* user needs */
+
+        .user-needs {
+          background-color: #fff;
+          border-radius: 2rem;
+          margin: 3rem 2rem;
+          padding: 0 1rem;
+        }
+
+        .box-half-user-needs {
+          background-color: #F8F5F0;
+          height: 11rem;
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+        }
+
+        /* user personas */
+
+        .persona-img {
+          padding: 2rem 0 .5rem;
+          width: 24.9rem;
+        }
+
+    /* information architecture */
+
+        /* user Stories */
+
+        /* user Flows */
+
+        .user-flows {
+          background-image: url("../images/sugar/user-flows.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          height: 47.5rem;
+          justify-content: center;
+          padding-top: 2rem;
+        }
+
+        .flows-text {
+          background-color: #fff;
+          border-radius: 2rem;
+          padding: 1.9rem;
+        }
+
+        .flows-text > h4 {
+          padding-bottom: 1.5rem;
+        }
+
+
+        /* Wireframes */
+
+        .wireframes-bg {
+          background-image: url("../images/sugar/wireframe-sketches.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 43rem;
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+        }
+
+        .wireframes {
+          padding-top: 3rem;
+        }
+
+        .wireframes-text {
+          background-color: #fff;
+          border-radius: 2rem;
+          padding: 2rem 2rem 0;
+        }
+
+        .wireframes-text > h4 {
+          padding-bottom: 1.5rem;
+        }
+
+        /* usability testing - round 1 */
+
+        /* key Takeaways */
+
+    /* visual design & Branding */
+
+        /* brand Characteristics */
+
+        /* color Palette */
+
+        .color-img {
+          padding: .5rem 0 2rem;
+          width: 100%;
+        }
+
+        .moodboard {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas:
+            "mbone      mbfour      mbfour"
+            "mbone      mbfour      mbfour"
+            "mbtwo      mbfour      mbfour"
+            "mbthree    mbthree     mbfive"
+            "mbthree    mbthree     mbfive"
+            "mbsix      mbnine      mbnine"
+            "mbseven    mbnine      mbnine"
+            "mbseven    mbten       mbeleven"
+            "mbeight    mbeight     mbeleven"
+            "mbeight    mbeight     mbtwelve";
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+        }
+
+            .mb-1 {
+              grid-area: mbone;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-2 {
+              grid-area: mbtwo;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-3 {
+              grid-area: mbthree;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-4 {
+              grid-area: mbfour;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-5 {
+              grid-area: mbfive;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-6 {
+              grid-area: mbsix;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-7 {
+              grid-area: mbseven;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-8 {
+              grid-area: mbeight;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-9 {
+              grid-area: mbnine;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-10 {
+              grid-area: mbten;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-11 {
+              grid-area: mbeleven;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+            .mb-12 {
+              grid-area: mbtwelve;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+
+        /* Typography */
+
+        .sugar-type {
+          padding: 1rem 0 2rem;
+        }
+
+        .sugar-h1 {
+          font-family: 'Raleway', sans-serif;
+          font-size: 21px;
+          font-weight: 700;
+        }
+
+        .sugar-h2 {
+          font-family: 'Raleway', sans-serif;
+          font-size: 21px;
+          font-weight: 400;
+        }
+
+        .sugar-h3 {
+          font-family: 'Raleway', sans-serif;
+          font-size: 14px;
+          font-weight: 800;
+        }
+
+        .sugar-h4 {
+          font-family: 'Raleway', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .sugar-h5 {
+          font-family: 'Zilla Slab', serif;
+          font-size: 17px;
+          font-weight: 300;
+        }
+
+        .sugar-h6 {
+          font-family: 'Zilla Slab', serif;
+          font-size: 14px;
+          font-weight: 300;
+        }
+
+        /* logo */
+
+        .logo-box {
+          height: 138.5rem;
+        }
+
+        .minor-section-logo {
+          padding: 0 2rem;
+        }
+
+        .minor-section-logo > h4 {
+          padding: 2rem 0 1.5rem;
+        }
+
+        .box-half-logo {
+          background-color: #F8F5F0;
+          height: 13rem;
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+        }
+
+        /* High Fidelity Mockups - v1 */
+
+        /* preference Testing */
+
+        .pref-box {
+          height: 177.5rem;
+        }
+
+        /* high fidelity mockups -v2 */
+
+        /* usability testing - round 2 */
+
+        /* key Takeaways */
+
+    /* final design & Conclusion */
+
+        /* final design */
+
+        /* conclusion */
+
+    /* back to top */
+
+    .back-to-top {
+      bottom: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 1rem;
+      position: -webkit-sticky;
+      position: sticky;
+      z-index: 1;
+    }
