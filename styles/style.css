@@ -138,10 +138,6 @@ footer {
       text-decoration: none;
     }
 
-    .email > h5:hover {
-      color: #F8F5F0;
-    }
-
     .social {
       display: flex;
       justify-content: center;
@@ -152,17 +148,9 @@ footer {
           background-size: cover;
         }
 
-        .linkedin:hover {
-          background-image: url(../images/icons/linkedin-light.png);
-        }
-
         .github {
           background-image: url(../images/icons/github.png);
           background-size: cover;
-        }
-
-        .github:hover {
-          background-image: url(../images/icons/github-light.png);
         }
 
         .linkedin, .github {
@@ -900,10 +888,6 @@ footer {
       width: 51px;
     }
 
-    .btt-img:hover {
-      background-image: url(../images/back-to-top-light.png);
-    }
-
 /* media queries tablet */
 
 @media screen and (min-width: 600px) {
@@ -927,10 +911,6 @@ footer {
       padding: .7rem;
     }
 
-    .button:hover > h4 {
-      color: #F8F5F0;
-    }
-
     header {
       grid-gap: 2rem;
       grid-template-areas:
@@ -939,19 +919,11 @@ footer {
       padding: 3rem 6rem 1rem;
     }
 
-        .logo:hover{
-          background-image: url(../images/macall-logo-light.png);
-        }
-
         .menu-work {
           grid-area: mwork;
           float: right;
           padding-top: 1.5rem;
           text-decoration: none;
-        }
-
-        .menu-work > h4:hover {
-          color: #D0CBC6;
         }
 
         .menu-about {
@@ -961,10 +933,6 @@ footer {
           text-decoration: none;
         }
 
-        .menu-about > h4:hover {
-          color: #D0CBC6;
-        }
-
         .menu-contact {
           grid-area: mcontact;
           float: right;
@@ -972,25 +940,13 @@ footer {
           text-decoration: none;
         }
 
-        .menu-contact > h4:hover {
-          color: #D0CBC6;
-        }
-
             /* home header */
-
-            .logo-home:hover{
-              background-image: url(../images/macall-logo-lightest.png);
-            }
 
             .menu-work-home {
               grid-area: mwork;
               float: right;
               padding-top: 1.5rem;
               text-decoration: none;
-            }
-
-            .menu-work-home > h4:hover {
-              color: #F8F5F0;
             }
 
             .menu-about-home {
@@ -1000,19 +956,11 @@ footer {
               text-decoration: none;
             }
 
-            .menu-about-home > h4:hover {
-              color: #F8F5F0;
-            }
-
             .menu-contact-home {
               grid-area: mcontact;
               float: right;
               padding-top: 1.5rem;
               text-decoration: none;
-            }
-
-            .menu-contact-home > h4:hover {
-              color: #F8F5F0;
             }
 
     /* home page */
@@ -1059,10 +1007,6 @@ footer {
 
     .background-box {
       height: 14.5rem;
-    }
-
-    .social-item > h5:hover {
-      color: #D0CBC6;
     }
 
     /* project sugar page */
@@ -1333,6 +1277,10 @@ footer {
       line-height: 30px;
     }
 
+    .button:hover > h4 {
+      color: #F8F5F0;
+    }
+
     /* header */
 
     .logo {
@@ -1340,12 +1288,58 @@ footer {
       width: 75px;
     }
 
-          /* home header */
+    .logo:hover{
+      background-image: url(../images/macall-logo-light.png);
+    }
 
-          .logo-home {
-            height: 93px;
-            width: 75px;
-          }
+    .menu-work > h4:hover {
+      color: #D0CBC6;
+    }
+
+    .menu-about > h4:hover {
+      color: #D0CBC6;
+    }
+
+    .menu-contact > h4:hover {
+      color: #D0CBC6;
+    }
+
+        /* home header */
+
+        .logo-home {
+          height: 93px;
+          width: 75px;
+        }
+
+        .logo-home:hover{
+          background-image: url(../images/macall-logo-lightest.png);
+        }
+
+        .menu-work-home > h4:hover {
+          color: #F8F5F0;
+        }
+
+        .menu-about-home > h4:hover {
+          color: #F8F5F0;
+        }
+
+        .menu-contact-home > h4:hover {
+          color: #F8F5F0;
+        }
+
+    /* footer */
+
+    .email > h5:hover {
+      color: #F8F5F0;
+    }
+
+        .linkedin:hover {
+          background-image: url(../images/icons/linkedin-light.png);
+        }
+
+        .github:hover {
+          background-image: url(../images/icons/github-light.png);
+        }
 
     /* home page */
 
@@ -1384,6 +1378,10 @@ footer {
 
     .background-box {
       height: 15.5rem;
+    }
+
+    .social-item > h5:hover {
+      color: #D0CBC6;
     }
 
     /* project sugar page */
@@ -1499,5 +1497,9 @@ footer {
             /* final design */
 
         /* back to top */
+
+        .btt-img:hover {
+          background-image: url(../images/back-to-top-light.png);
+        }
 
 }
