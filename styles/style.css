@@ -1279,6 +1279,10 @@ footer {
               height: 7.5rem;
             }
 
+            .img-constrain-logo {
+              width: 50%;
+            }
+
             /* preference Testing */
 
             /* final design */
