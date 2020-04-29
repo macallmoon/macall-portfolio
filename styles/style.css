@@ -97,15 +97,26 @@ header {
   padding: 2rem;
 }
 
-    .logo {
+    .logo, .logo-home {
+      background-image: url(../images/macall-logo.png);
+      background-size: cover;
+      background-position: center center;
+      height: 62px;
       grid-area: logo;
       width: 50px;
     }
 
     .menu-icon {
+      float: right;
       grid-area: men;
       padding-top: 1.5rem;
-      float: right;
+    }
+
+    /* home header */
+
+    .logo-home {
+      height: 62px;
+      width: 50px;
     }
 
 /* footer */
@@ -127,13 +138,36 @@ footer {
       text-decoration: none;
     }
 
+    .email > h5:hover {
+      color: #F8F5F0;
+    }
+
     .social {
       display: flex;
       justify-content: center;
     }
 
+        .linkedin {
+          background-image: url(../images/icons/linkedin.png);
+          background-size: cover;
+        }
+
+        .linkedin:hover {
+          background-image: url(../images/icons/linkedin-light.png);
+        }
+
+        .github {
+          background-image: url(../images/icons/github.png);
+          background-size: cover;
+        }
+
+        .github:hover {
+          background-image: url(../images/icons/github-light.png);
+        }
+
         .linkedin, .github {
-          padding: 1rem .5rem 0;
+          height: 3.4rem;
+          margin: 1rem .5rem 0;
           width: 3.4rem;
         }
 
@@ -454,6 +488,18 @@ footer {
       width: 100%;
     }
 
+    .column-1-jump {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .column-2-jump {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+
         .section-links {
           display: grid;
           flex-direction: row;
@@ -462,28 +508,18 @@ footer {
           padding-top: 1.5rem;
         }
 
-            .column-1 {
+            .sect {
+              align-items: center;
               display: flex;
-              flex-direction: column;
+              flex-direction: row;
+              padding-bottom: 1.5rem;
+              text-decoration: none;
             }
 
-            .column-2 {
-              display: flex;
-              flex-direction: column;
-            }
-
-                .sect {
-                  align-items: center;
-                  display: flex;
-                  flex-direction: row;
-                  padding-bottom: 1.5rem;
-                  text-decoration: none;
+                .sect-img {
+                  padding-right: 1rem;
+                  width: 3.3rem;
                 }
-
-                    .sect-img {
-                      padding-right: 1rem;
-                      width: 3.3rem;
-                    }
 
     /* case study sections */
 
@@ -516,6 +552,10 @@ footer {
 
     .h5-bottom-pad > h5 {
       padding-bottom: 2rem;
+    }
+
+    .spacer {
+      padding-top: 3rem;
     }
 
     /* research & discovery */
@@ -850,20 +890,41 @@ footer {
       z-index: 1;
     }
 
-/* media queries tablet & desktop */
+    .btt-img {
+      background-image: url(../images/back-to-top.png);
+      height: 51px;
+      width: 51px;
+    }
 
-@media screen and (min-width: 744px) {
+    .btt-img:hover {
+      background-image: url(../images/back-to-top-light.png);
+    }
+
+/* media queries tablet */
+
+@media screen and (min-width: 600px) {
 
     .mobile {
       display: none;
+    }
+
+    .tablet {
+      display: block;
     }
 
     .desktop {
       display: block;
     }
 
-    html {
-      font-size: 12px;
+    .button {
+      border-radius: 1.7rem;
+      margin-top: 1.7rem;
+      max-width: 33rem;
+      padding: .7rem;
+    }
+
+    .button > h4:hover {
+      color: #F8F5F0;
     }
 
     header {
@@ -874,9 +935,8 @@ footer {
       padding: 3rem 6rem 1rem;
     }
 
-        .logo {
-          grid-area: logo;
-          width: 75px;
+        .logo:hover{
+          background-image: url(../images/macall-logo-light.png);
         }
 
         .menu-work {
@@ -886,7 +946,7 @@ footer {
           text-decoration: none;
         }
 
-        .menu-work > h3:hover {
+        .menu-work > h4:hover {
           color: #D0CBC6;
         }
 
@@ -897,7 +957,7 @@ footer {
           text-decoration: none;
         }
 
-        .menu-about > h3:hover {
+        .menu-about > h4:hover {
           color: #D0CBC6;
         }
 
@@ -908,18 +968,65 @@ footer {
           text-decoration: none;
         }
 
-        .menu-contact > h3:hover {
+        .menu-contact > h4:hover {
           color: #D0CBC6;
         }
+
+            /* home header */
+
+            .logo-home:hover{
+              background-image: url(../images/macall-logo-lightest.png);
+            }
+
+            .menu-work-home {
+              grid-area: mwork;
+              float: right;
+              padding-top: 1.5rem;
+              text-decoration: none;
+            }
+
+            .menu-work-home > h4:hover {
+              color: #F8F5F0;
+            }
+
+            .menu-about-home {
+              grid-area: mabout;
+              float: right;
+              padding-top: 1.5rem;
+              text-decoration: none;
+            }
+
+            .menu-about-home > h4:hover {
+              color: #F8F5F0;
+            }
+
+            .menu-contact-home {
+              grid-area: mcontact;
+              float: right;
+              padding-top: 1.5rem;
+              text-decoration: none;
+            }
+
+            .menu-contact-home > h4:hover {
+              color: #F8F5F0;
+            }
 
     /* home page */
 
         /* hero section */
 
         .hero-container {
-          background-image: url("../images/hero-desktop-w-filter.png");
+          background-image: url("../images/hero-tablet-w-filter.png");
           height: 80vh;
           min-height: 30rem;
+        }
+
+        .hero-text {
+          padding: 6rem;
+        }
+
+        .feat-text > h5 {
+          padding-top: 1rem;
         }
 
     /* about page */
@@ -943,82 +1050,31 @@ footer {
     /* contact page */
 
     .background-box {
-      height: 15.5rem;
+      height: 14.5rem;
+    }
+
+    .social-item > h5:hover {
+      color: #D0CBC6;
     }
 
     /* project sugar page */
 
         /* project hero */
 
-        .box-bg {
-          background-color: #F8F5F0;
-          height: calc(42rem - 10vw);
-          position: absolute;
-          width: 100%;
-          z-index: -1;
-        }
-
-        .desktop-proj-hero {
-          background: none;
-          padding: 0 6rem;
-        }
-
-        .box-hero {
-          display: flex;
-          flex-direction: row-reverse;
-          padding-top: 3rem;
-        }
-
-        .proj-hero-img {
-          background: none;
-          width: 45vw;
-        }
-
-        .proj-hero-text {
-          background: none;
-          text-align: left;
-        }
-
         .project-button {
-
-        }
-
-        .box-hero {
-          background: none;
-        }
-
-        .box-half {
           display: none;
         }
 
-        .button {
-          border-radius: 1.7rem;
-          margin-top: 1.7rem;
-          max-width: 33rem;
-          padding: .7rem;
-        }
-
-        .button:hover {
-          background-color: #F8F5F0;
+        .box-half {
+          height: 4rem;
         }
 
         /* specs */
 
         .specs {
-          display: flex;
-          padding-top: 5rem;
-        }
-
-        .role {
-          flex-grow: 1;
-        }
-
-        .deliverables {
-          flex-grow: 1;
-        }
-
-        .tools {
-          flex-grow: 1;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 5rem 2rem 0;
         }
 
         /* problem & solution */
@@ -1035,14 +1091,22 @@ footer {
               padding: 0 2rem;
             }
 
-                .column-1 {
+                .column-1-jump {
                   flex-direction: row;
                   flex-grow: 1;
                 }
 
-                .column-2 {
+                .column-2-jump {
                   flex-direction: row;
                   flex-grow: 1;
+                }
+
+                .sect-img {
+                  width: 5rem;
+                }
+
+                .sect > h6:hover {
+                  color: #D0CBC6;
                 }
 
                     .rd-sect {
@@ -1067,109 +1131,45 @@ footer {
 
         /* case study sections */
 
-        /* .main-section > h3 {
-          margin: 0 auto;
-          max-width: 50rem;
-          padding: 5rem 2rem 0;
+        .main-section > h3 {
+          padding: 7rem 2rem 0;
         }
-
-        .minor-section {
-          padding: 0 2rem 1rem;
-        }
-
-        .minor-section > h4 {
-          padding: 2rem 0 1.5rem;
-        }
-
-        .bg-box {
-          padding-top: 2rem;
-        }
-
-        .img-width {
-          padding-top: 2rem;
-          width: 100%;
-        }
-
-        .shadow {
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .h5-bottom-pad > h5 {
-          padding-bottom: 2rem;
-        } */
 
         /* research & discovery */
 
             /* competitive analysis */
 
             .ca-across {
-              display: flex;
-              flex-direction: row;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
               max-width: none;
+              padding: 0 6rem;
             }
 
             .comp-analysis {
-              margin: 0 auto;
-              max-width: 50rem;
-              padding: 2rem 0 0;
-            }
-
-            .comp-analysis > h5 {
-              padding-top: 1rem;
-            }
-
-            .ca-img {
-              padding-bottom: .5rem;
-              width: 7.7rem;
+              padding: 2rem 2rem 0;
             }
 
             /* survey */
 
-            .survey-result {
-              align-items: center;
-              display: flex;
-              padding: .75rem 0;
-            }
-
-            .survey-result > h3 {
-              padding-right: 1rem;
-              width: 7.6rem;
-            }
-
-            .survey-result > h5 {
-              width: 24.9rem;
-            }
-
-            .survey-box {
-              height: 77rem;
-            }
-
-            .survey-text {
-              padding-bottom: .75rem;
+            .survey {
+              margin-top: 3rem;
             }
 
             /* user needs */
 
-            .user-needs {
-              background-color: #fff;
-              border-radius: 2rem;
-              margin: 3rem 2rem;
-              padding: 0 1rem;
-            }
-
-            .box-half-user-needs {
-              background-color: #F8F5F0;
-              height: 11rem;
-              position: absolute;
-              width: 100%;
-              z-index: -1;
-            }
-
             /* user personas */
+
+            .persona {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              max-width: none;
+              padding: 0 6rem;
+            }
 
             .persona-img {
               padding: 2rem 0 .5rem;
-              width: 24.9rem;
+              max-width: 16rem;
             }
 
         /* information architecture */
@@ -1179,51 +1179,288 @@ footer {
             /* user Flows */
 
             .user-flows {
-              background-image: url("../images/sugar/user-flows.png");
-              background-repeat: no-repeat;
-              background-size: cover;
-              display: flex;
-              flex-direction: column;
-              height: 47.5rem;
-              justify-content: center;
-              padding-top: 2rem;
+              background-image: url("../images/sugar/user-flows-desktop.png");
             }
 
             .flows-text {
-              background-color: #fff;
-              border-radius: 2rem;
-              padding: 1.9rem;
-            }
-
-            .flows-text > h4 {
-              padding-bottom: 1.5rem;
+              max-width: 46rem;
             }
 
 
             /* Wireframes */
 
             .wireframes-bg {
-              background-image: url("../images/sugar/wireframe-sketches.png");
-              background-repeat: no-repeat;
-              background-size: cover;
-              height: 43rem;
-              position: absolute;
-              width: 100%;
-              z-index: -1;
+              background-image: url("../images/sugar/wireframe-sketches-desktop.png");
+            }
+
+            .wf-center {
+              display: flex;
+              justify-content: center;
             }
 
             .wireframes {
-              padding-top: 3rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
             }
 
             .wireframes-text {
-              background-color: #fff;
-              border-radius: 2rem;
-              padding: 2rem 2rem 0;
+              margin: 2rem;
+              max-width: 50rem;
             }
 
-            .wireframes-text > h4 {
-              padding-bottom: 1.5rem;
+            iframe {
+              margin: 0 auto;
+            }
+
+            /* usability testing - round 1 */
+
+            /* key Takeaways */
+
+            .takeaways {
+              padding-bottom: 2rem;
+            }
+
+        /* visual design & Branding */
+
+            /* brand Characteristics */
+
+            /* color Palette */
+
+            .color-img-cont {
+              display: flex;
+              justify-content: center;
+            }
+
+            .color-img {
+              max-width: 30rem;
+            }
+
+            .moodboard {
+              grid-template-areas:
+                "mbone      mbfour      mbfour    mbsix      mbnine      mbnine"
+                "mbone      mbfour      mbfour    mbseven    mbnine      mbnine"
+                "mbtwo      mbfour      mbfour    mbseven    mbten       mbeleven"
+                "mbthree    mbthree     mbfive    mbeight    mbeight     mbeleven"
+                "mbthree    mbthree     mbfive    mbeight    mbeight     mbtwelve";
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+              padding: 1rem;
+            }
+
+            /* Typography */
+
+            .logo-text-img {
+              padding-bottom: 1rem;
+            }
+
+            /* logo */
+
+            .desktop-proj-imgs {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                padding-bottom: 2rem;
+            }
+
+            .bottom-logo {
+              padding-top: 0;
+            }
+
+            .box-half-logo {
+              height: 7.5rem;
+            }
+
+            /* preference Testing */
+
+            /* final design */
+
+            .prototype-embed {
+              display: flex;
+              justify-content: center;
+            }
+
+        /* back to top */
+
+}
+
+/* media queries desktop */
+
+@media screen and (min-width: 1100px) {
+
+    .tablet {
+      display: none;
+    }
+
+    html {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 72px;
+      line-height: 90px;
+    }
+
+    h2 {
+      font-size: 54px;
+      line-height: 81px;
+    }
+
+    h3 {
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    h5 {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    /* header */
+
+    .logo {
+      height: 93px;
+      width: 75px;
+    }
+
+          /* home header */
+
+          .logo-home {
+            height: 93px;
+            width: 75px;
+          }
+
+    /* home page */
+
+        /* hero section */
+
+        .hero-container {
+          background-image: url("../images/hero-desktop-w-filter.png");
+        }
+
+        .feat-proj {
+          display: grid;
+          grid-gap: 3rem;
+          grid-template-columns: 1fr 1fr;
+          padding-left: 12rem;
+          padding-right: 12rem;
+        }
+
+        .feat-imgs {
+          width: 30vw;
+        }
+
+        .feat-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-bottom: 3rem;
+        }
+
+    /* about page */
+
+    /* contact page */
+
+    .background-box {
+      height: 15.5rem;
+    }
+
+    /* project sugar page */
+
+        /* project hero */
+
+        .box-bg {
+          background-color: #F8F5F0;
+          height: calc(38rem - 10vw);
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+        }
+
+        .desktop-proj-hero {
+          background: none;
+          padding: 0 10vw;
+        }
+
+        .box-hero {
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 3rem;
+        }
+
+        .proj-hero-img {
+          background: none;
+          width: 40vw;
+        }
+
+        .proj-hero-text {
+          background: none;
+          text-align: left;
+        }
+
+        .project-button {
+          align-items: center;
+          background-color: #D0CBC6;
+          border-radius: 1.7rem;
+          display: flex;
+          flex-direction: column;
+          margin-top: 1.7rem;
+          max-width: 33rem;
+          padding: .7rem;
+          text-align: center;
+          text-decoration: none;
+          width: 90%;
+        }
+
+        .project-button > h4:hover {
+          color: #F8F5F0;
+        }
+
+        .box-hero {
+          background: none;
+        }
+
+        .box-half {
+          display: none;
+        }
+
+        /* specs */
+
+        /* problem & solution */
+
+        /* jump to section */
+
+        /* case study sections */
+
+        /* research & discovery */
+
+            /* competitive analysis */
+
+            /* survey */
+
+            /* user needs */
+
+            /* user personas */
+
+        /* information architecture */
+
+            /* user Stories */
+
+            /* user Flows */
+
+            /* Wireframes */
+
+            .wireframes {
+              flex-direction: row;
+            }
+
+            .wireframes-text {
+              max-width: 40rem;
             }
 
             /* usability testing - round 1 */
@@ -1236,189 +1473,14 @@ footer {
 
             /* color Palette */
 
-            .color-img {
-              padding: .5rem 0 2rem;
-              width: 100%;
-            }
-
-            .moodboard {
-              display: grid;
-              grid-gap: 1rem;
-              grid-template-areas:
-                "mbone      mbfour      mbfour"
-                "mbone      mbfour      mbfour"
-                "mbtwo      mbfour      mbfour"
-                "mbthree    mbthree     mbfive"
-                "mbthree    mbthree     mbfive"
-                "mbsix      mbnine      mbnine"
-                "mbseven    mbnine      mbnine"
-                "mbseven    mbten       mbeleven"
-                "mbeight    mbeight     mbeleven"
-                "mbeight    mbeight     mbtwelve";
-              grid-template-columns: 1fr 1fr 1fr;
-              grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
-            }
-
-                .mb-1 {
-                  grid-area: mbone;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-2 {
-                  grid-area: mbtwo;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-3 {
-                  grid-area: mbthree;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-4 {
-                  grid-area: mbfour;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-5 {
-                  grid-area: mbfive;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-6 {
-                  grid-area: mbsix;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-7 {
-                  grid-area: mbseven;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-8 {
-                  grid-area: mbeight;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-9 {
-                  grid-area: mbnine;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-10 {
-                  grid-area: mbten;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-11 {
-                  grid-area: mbeleven;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
-                .mb-12 {
-                  grid-area: mbtwelve;
-                  height: 100%;
-                  object-fit: cover;
-                  width: 100%;
-                }
-
             /* Typography */
-
-            .sugar-type {
-              padding: 1rem 0 2rem;
-            }
-
-            .sugar-h1 {
-              font-family: 'Raleway', sans-serif;
-              font-size: 21px;
-              font-weight: 700;
-            }
-
-            .sugar-h2 {
-              font-family: 'Raleway', sans-serif;
-              font-size: 21px;
-              font-weight: 400;
-            }
-
-            .sugar-h3 {
-              font-family: 'Raleway', sans-serif;
-              font-size: 14px;
-              font-weight: 800;
-            }
-
-            .sugar-h4 {
-              font-family: 'Raleway', sans-serif;
-              font-size: 14px;
-              font-weight: 400;
-            }
-
-            .sugar-h5 {
-              font-family: 'Zilla Slab', serif;
-              font-size: 17px;
-              font-weight: 300;
-            }
-
-            .sugar-h6 {
-              font-family: 'Zilla Slab', serif;
-              font-size: 14px;
-              font-weight: 300;
-            }
 
             /* logo */
 
-            .minor-section-logo {
-              padding: 0 2rem;
-            }
+            /* preference Testing */
 
-            .minor-section-logo > h4 {
-              padding: 2rem 0 1.5rem;
-            }
-
-            .box-half-logo {
-              background-color: #F8F5F0;
-              height: 13rem;
-              position: absolute;
-              width: 100%;
-              z-index: -1;
-            }
-
-            .last-logo {
-              display: flex;
-              justify-content: center;
-            }
-
+            /* final design */
 
         /* back to top */
-
-        .back-to-top {
-          bottom: 0;
-          display: flex;
-          flex-direction: row-reverse;
-          padding: 1rem;
-          position: -webkit-sticky;
-          position: sticky;
-          z-index: 1;
-        }
 
 }

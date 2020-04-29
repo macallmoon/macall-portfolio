@@ -19,20 +19,18 @@
 
         <!--navigation bar-->
         <header>
-          <a href="index.html">
-            <img class="logo" src="images/macall-logo.png" alt="Logo">
-          </a>
+          <a href="index.html" class="logo"></a>
           <a href="menu.html">
             <img class="mobile menu-icon" src="images/menu-mobile.png" alt="Navigation Menu">
           </a>
           <a href="index.html#work" class="desktop menu-work">
-            <h3>Work</h3>
+            <h4>Work</h4>
           </a>
           <a href="about.html" class="desktop menu-about">
-            <h3>About</h3>
+            <h4>About</h4>
           </a>
           <a href="contact.html" class="desktop menu-contact">
-            <h3>Contact</h3>
+            <h4>Contact</h4>
           </a>
         </header>
 
@@ -50,13 +48,13 @@
                 <h4>Product Designer</h4>
                 <h5>Duration: 8 weeks</h5>
                 <h5 class="proj-description">Sugar is giving consumers the option of anything-sharing. Like ride-sharing, but for anything.</h5>
-                <a class="button project-button desktop" href="https://www.figma.com/proto/RpwYz1yi41cxaSm5eVBam1/Sugar-Final?node-id=5%3A7&viewport=599%2C558%2C0.05390194430947304&scaling=scale-down">
+                <a class="project-button desktop" href="https://www.figma.com/proto/RpwYz1yi41cxaSm5eVBam1/Sugar-Final?node-id=5%3A7&viewport=599%2C558%2C0.05390194430947304&scaling=scale-down">
                   <h4>Prototype</h4>
                 </a>
               </div>
             </div>
             <div class="box-half"></div>
-            <a class="button project-button mobile" href="https://www.figma.com/proto/RpwYz1yi41cxaSm5eVBam1/Sugar-Final?node-id=5%3A7&viewport=599%2C558%2C0.05390194430947304&scaling=scale-down">
+            <a class="button mobile tablet" href="https://www.figma.com/proto/RpwYz1yi41cxaSm5eVBam1/Sugar-Final?node-id=5%3A7&viewport=599%2C558%2C0.05390194430947304&scaling=scale-down">
               <h4>Prototype</h4>
             </a>
             <div class="specs">
@@ -106,7 +104,7 @@
 
             <div class="section-links">
 
-              <div class="column-1">
+              <div class="column-1-jump">
                 <a class="sect rd-sect" href="#research">
                   <img class="sect-img" src="images/icons/research.png" alt="research and discovery">
                   <h6>Research &<br>Discovery</h6>
@@ -117,7 +115,7 @@
                 </a>
               </div> <!--end column-1-->
 
-              <div class="column-2">
+              <div class="column-2-jump">
                 <a class="sect ia-sect" href="#info-arch">
                   <img class="sect-img" src="images/icons/information-architecture.png" alt="information architecture">
                   <h6>Information<br>Architecture</h6>
@@ -141,9 +139,11 @@
             <h3>Research & Discovery</h3>
 
             <!--Competitive Analysis-->
-            <section class="minor-section limit-width">
-              <h4>Competitive Analysis</h4>
-              <h5>This isn’t a new concept. Many sites have come and gone trying to address this very problem. Everyone loves the idea, but no one has been particularly successful. Three major players in the market today are Fat Llama, PeerRenters, and ZiLok.</h5>
+            <section>
+              <div class="minor-section limit-width">
+                <h4>Competitive Analysis</h4>
+                <h5>This isn’t a new concept. Many sites have come and gone trying to address this very problem. Everyone loves the idea, but no one has been particularly successful. Three major players in the market today are Fat Llama, PeerRenters, and ZiLok.</h5>
+              </div>
               <div class="ca-across">
                 <div class="comp-analysis text-center">
                   <img class="ca-img" src="images/sugar/fat-llama.png" alt="Fat Llama Logo">
@@ -169,8 +169,9 @@
 
 
             <!--Survey-->
-              <section class="minor-section box">
-                <div class="limit-width bg-top-margin">
+              <div class="spacer"></div>
+              <section class="box survey">
+                <div class="limit-width minor-section bg-top-margin">
                   <h4>Survey</h4>
                   <h5 class="survey-text">There is definitely room in the market for a product that can really solve user needs. In order to understand what those user needs are, I conducted a survey.</h5>
                   <div class="survey-result">
@@ -216,23 +217,28 @@
             </section> <!--end minor-section center-->
 
             <!--User Personas-->
-            <section class="minor-section limit-width">
-              <h4>User Personas</h4>
-              <h5>From the survey results, I learned that there are three types of user. I created a persona for each type.</h5>
-              <div class="persona text-center">
-                <img class="persona-img" src="images/sugar/jessica-hart.png" alt="Jessica Hart portrait">
-                <h4>Jessica Hart</h4>
-                <h5>Lender & Borrower</h5>
-              </div> <!--end persona-->
-              <div class="persona text-center">
-                <img class="persona-img" src="images/sugar/samantha-elliott.png" alt="Samantha Elliott portrait">
-                <h4>Samantha Elliott</h4>
-                <h5>Borrower</h5>
-              </div> <!--end persona-->
-              <div class="persona text-center">
-                <img class="persona-img" src="images/sugar/brittany-perkins.png" alt="Britt portrait">
-                <h4>Britt Perkins</h4>
-                <h5>Reluctant</h5>
+            <div class="spacer"></div>
+            <section>
+              <div class="minor-section limit-width">
+                <h4>User Personas</h4>
+                <h5>From the survey results, I learned that there are three types of user. I created a persona for each type.</h5>
+              </div>
+              <div class="persona">
+                <div class="text-center">
+                  <img class="persona-img" src="images/sugar/jessica-hart.png" alt="Jessica Hart portrait">
+                  <h4>Jessica Hart</h4>
+                  <h5>Lender & Borrower</h5>
+                </div>
+                <div class="text-center">
+                  <img class="persona-img" src="images/sugar/samantha-elliott.png" alt="Samantha Elliott portrait">
+                  <h4>Samantha Elliott</h4>
+                  <h5>Borrower</h5>
+                </div>
+                <div class="text-center">
+                  <img class="persona-img" src="images/sugar/brittany-perkins.png" alt="Britt portrait">
+                  <h4>Britt Perkins</h4>
+                  <h5>Reluctant</h5>
+                </div>
               </div> <!--end persona-->
               <a class="button" href="https://drive.google.com/drive/folders/1G6sOQqC1XcOnJCJ74CJBTcSAfVJj_Kpq?usp=sharing">
                 <h4>User Personas</h4>
@@ -264,6 +270,7 @@
             </section> <!--end minor-section-->
 
             <!--User Flows-->
+            <div class="spacer"></div>
             <section class="minor-section user-flows bg-top-margin">
               <div class="flows-text limit-width">
                 <h4 class="text-center">User Flows</h4>
@@ -277,22 +284,24 @@
             <!--Wireframes-->
             <div>
               <div class="wireframes-bg"></div>
-              <section class="minor-section wireframes limit-width">
-                <div class="wireframes-text">
-                  <h4 class="text-center">Wireframes</h4>
-                  <h5>
-                    I chose to brainstorm with physical sketches to make sure I was considering lots of  different ideas and none of them were too sticky. I sketched at least 4 options for each screen and then selected the best, which was sometimes a combination of multiple ideas. <br><br>
-                    Once I had decided on the general layouts for my screens, I created digital wireframes in Figma. I wanted to keep these wireframes very stripped down and gray-scale with only the basic layout and functionality so that I could test the basic functionality of my solution.
-                  </h5>
-                  <a class="button" href="https://drive.google.com/drive/folders/1B_XxZSnGbrezAN7V8wUulj8OML0Z_21s?usp=sharing">
-                    <h4>Wireframe Sketches</h4>
-                  </a>
-                  <a class="button mobile" href="https://invis.io/2AWY6CDH7KJ#/402685182_Home_-_No_User">
-                    <h4>Wireframe Prototype</h4>
-                  </a>
-                </div>
-                <iframe width="424" height="916" src="//invis.io/KUWU98VX4TV" allowfullscreen class="desktop"></iframe>
-              </section> <!--end minor-section center-->
+              <div class="wf-center">
+                <section class="minor-section wireframes">
+                  <div class="wireframes-text">
+                    <h4 class="text-center">Wireframes</h4>
+                    <h5>
+                      I chose to brainstorm with physical sketches to make sure I was considering lots of  different ideas and none of them were too sticky. I sketched at least 4 options for each screen and then selected the best, which was sometimes a combination of multiple ideas. <br><br>
+                      Once I had decided on the general layouts for my screens, I created digital wireframes in Figma. I wanted to keep these wireframes very stripped down and gray-scale with only the basic layout and functionality so that I could test the basic functionality of my solution.
+                    </h5>
+                    <a class="button" href="https://drive.google.com/drive/folders/1B_XxZSnGbrezAN7V8wUulj8OML0Z_21s?usp=sharing">
+                      <h4>Wireframe Sketches</h4>
+                    </a>
+                    <a class="button mobile" href="https://invis.io/2AWY6CDH7KJ#/402685182_Home_-_No_User">
+                      <h4>Wireframe Prototype</h4>
+                    </a>
+                  </div>
+                  <iframe width="424" height="916" src="//invis.io/KUWU98VX4TV" allowfullscreen class="desktop"></iframe>
+                </section> <!--end minor-section center-->
+              </div> <!--end wf-center-->
             </div>
 
             <!--Usability Testing - Round 1-->
@@ -311,8 +320,9 @@
             </section> <!--end minor-section-->
 
             <!--Key Takeaways-->
+            <div class="spacer"></div>
             <section class="box">
-              <div class="minor-section limit-width bg-top-margin">
+              <div class="minor-section limit-width bg-top-margin takeaways">
                 <h4>Key Takeaways</h4>
                 <h5>
                   The purpose of the site was very unclear. I  was missing a hero image in my wireframes, so I thought creating an illustration for the home page would help.<br><br>
@@ -348,12 +358,17 @@
             </section> <!--end minor-section-->
 
             <!--Color Palette-->
-            <section class="minor-section limit-width">
-              <h4>Color Palette</h4>
-              <img class="color-img" src="images/sugar/color-palette.png" alt="Color Palette">
-              <h5>
-                For the color palette, my initial thought was to use greens because the environment was such a large motivator for users. However, I ultimately felt that didn’t jive well with the  id “Sugar”, and decided I could do better. Pinks and purples are an obvious choice because they are bubbly and sweet, but I wanted to keep it gender neutral and that could easily turn feminine. I decided on a terracotta orange and periwinkle blue. They are gender neutral, friendly, professional, earthy, and align well with the  id “Sugar”.
-              </h5>
+            <div class="spacer"></div>
+            <section>
+              <div class="minor-section limit-width">
+                <h4>Color Palette</h4>
+                <div class="color-img-cont">
+                  <img class="color-img" src="images/sugar/color-palette.png" alt="Color Palette">
+                </div>
+                <h5>
+                  For the color palette, my initial thought was to use greens because the environment was such a large motivator for users. However, I ultimately felt that didn’t jive well with the  id “Sugar”, and decided I could do better. Pinks and purples are an obvious choice because they are bubbly and sweet, but I wanted to keep it gender neutral and that could easily turn feminine. I decided on a terracotta orange and periwinkle blue. They are gender neutral, friendly, professional, earthy, and align well with the  id “Sugar”.
+                </h5>
+              </div>
               <div class="moodboard">
                 <img class="mb-1" src="images/sugar/moodboard/1.jpg" alt="Moodboard image 1">
                 <img class="mb-2" src="images/sugar/moodboard/2.jpg" alt="Moodboard image 2">
@@ -371,6 +386,7 @@
             </section> <!--end minor-sectio-->
 
             <!--Typography-->
+            <div class="spacer"></div>
             <section class="minor-section limit-width">
               <h4>Typography</h4>
               <div class="sugar-type text-center">
@@ -386,10 +402,11 @@
                 For the headers, I liked the personality of some of the more organic typefaces, but ultimately decided they felt unprofessional. As for body text, I knew I wanted something with a serif and a fairly uniform stroke so that it would be easy to read. I decided to use Raleway for the headers and Zilla Slab for the body. <br><br>
                 The logo text is actually a modification of Raleway Dots, but rather than dots, I used small squares, reminiscent of sugar cubes.
               </h5>
-              <img class="img-width" src="images/sugar/logo-text.png" alt="Sugar logo text">
+              <img class="img-width logo-text-img" src="images/sugar/logo-text.png" alt="Sugar logo text">
             </section> <!--end minor-section-->
 
             <!--Logo-->
+            <div class="spacer"></div>
             <section>
               <div class="box">
                 <div class="minor-section-logo bg-top-margin limit-width">
@@ -397,16 +414,22 @@
                   <h5>
                     I had a lot of ideas for the logo mark, but I decided to use measuring cups as a nod to the “cup of sugar” genesis. I created both light and dark versions of the logo so it will stand out on a variety of backgrounds.
                   </h5>
-                  <img class="img-width" src="images/sugar/logo-sketches.png" alt="Sugar logo sketches">
-                  <img class="img-width" src="images/sugar/digital-logos.png" alt="Sugar digital logos">
-                  <img class="img-width" src="images/sugar/logo-dark.png" alt="Sugar logo dark version">
+                  <div class="desktop-proj-imgs">
+                    <img class="img-width left-img" src="images/sugar/logo-sketches.png" alt="Sugar logo sketches">
+                    <img class="img-width" src="images/sugar/digital-logos.png" alt="Sugar digital logos">
+                  </div>
+                  <img class="img-width mobile" src="images/sugar/logo-dark.png" alt="Sugar logo dark version">
                 </div>
               </div>
               <div class="box-half-logo"></div>
-              <img class="limit-width img-width minor-section last-logo" src="images/sugar/logo-light.png" alt="Sugar logo light version">
+              <div class="proj-imgs limit-width minor-section">
+                <img class="img-width last-logo bottom-logo left-img" src="images/sugar/logo-light.png" alt="Sugar logo light version">
+                <img class="img-width desktop bottom-logo" src="images/sugar/logo-dark.png" alt="Sugar logo dark version">
+              </div>
             </section> <!--end minor-section-->
 
             <!--HiFi Mockups v1-->
+            <div class="spacer"></div>
             <section class="minor-section h5-bottom-pad limit-width">
               <h4>High Fidelity Mockups - v1</h4>
               <h5>
@@ -422,32 +445,35 @@
                 <img class="shadow" src="images/sugar/screen-menu-v1.png" alt="Sugar menu screen version 1">
               </div>
               <a class="button" href="https://drive.google.com/drive/folders/1XWCWECB6y5soy2h1xTld0ZAjetFtOCqB?usp=sharing">
-                <h4>HiFi Mockups v1</h4>
+                <h4>Hi-Fi Mockups v1</h4>
               </a>
             </section> <!--end minor-section-->
 
             <!--Preference Testing-->
+            <div class="spacer"></div>
             <section class="box">
               <div class="minor-section h5-bottom-pad bg-top-margin limit-width">
-              <h4>Preference Testing</h4>
-              <h5>69% of participants preferred the gradient background (left).</h5>
-              <div class="proj-imgs">
-                <img class="left-img shadow" src="images/sugar/preftest1.1.png" alt="Preference Test 1, version 1">
-                <img class="shadow" src="images/sugar/preftest1.2.png" alt="Preference Test 1, version 2">
-              </div>
-              <h5>88% of participants preferred the solid white background (right).</h5>
-              <div class="proj-imgs">
-                <img class="left-img shadow" src="images/sugar/preftest2.1.png" alt="Preference Test 2, version 1">
-                <img class="shadow" src="images/sugar/preftest2.2.png" alt="Preference Test 2, version 2">
-              </div>
-              <h5>56% of participants preferred the pink message background (left). However, I did learn that the purpose of highlighting the message was unclear, so I knew I needed to adjust my design.</h5>
-              <div class="proj-imgs">
-                <img class="left-img shadow" src="images/sugar/preftest3.1.png" alt="Preference Test 3, version 1">
-                <img class="shadow" src="images/sugar/preftest3.2.png" alt="Preference Test 3, version 2">
+                <h4>Preference Testing</h4>
+                <h5>69% of participants preferred the gradient background (left).</h5>
+                <div class="proj-imgs">
+                  <img class="left-img shadow" src="images/sugar/preftest1.1.png" alt="Preference Test 1, version 1">
+                  <img class="shadow" src="images/sugar/preftest1.2.png" alt="Preference Test 1, version 2">
+                </div>
+                <h5>88% of participants preferred the solid white background (right).</h5>
+                <div class="proj-imgs">
+                  <img class="left-img shadow" src="images/sugar/preftest2.1.png" alt="Preference Test 2, version 1">
+                  <img class="shadow" src="images/sugar/preftest2.2.png" alt="Preference Test 2, version 2">
+                </div>
+                <h5>56% of participants preferred the pink message background (left). However, I did learn that the purpose of highlighting the message was unclear, so I knew I needed to adjust my design.</h5>
+                <div class="proj-imgs">
+                  <img class="left-img shadow" src="images/sugar/preftest3.1.png" alt="Preference Test 3, version 1">
+                  <img class="shadow" src="images/sugar/preftest3.2.png" alt="Preference Test 3, version 2">
+                </div>
               </div>
             </section> <!--end minor-section-->
 
             <!--HiFi Mockups v2-->
+            <div class="spacer"></div>
             <section class="minor-section h5-bottom-pad limit-width">
               <h4>High Fidelity Mockups - v2</h4>
               <h5>
@@ -461,11 +487,12 @@
                 <img class="shadow" src="images/sugar/screen-requests-v2.png" alt="Sugar requests screen version 2">
               </div>
               <a class="button" href="https://drive.google.com/drive/folders/1b0kplcNpPiDZPgGmUPk8ZGowqCu4v7TY?usp=sharing">
-                <h4>HiFi Mockups v2</h4>
+                <h4>Hi-Fi Mockups v2</h4>
                 </a>
             </section> <!--end minor-section-->
 
             <!--Usability Testing - Round 2-->
+            <div class="spacer"></div>
             <section class="minor-section limit-width">
               <h4>Usability Testing - Round 2</h4>
               <h5>
@@ -482,20 +509,22 @@
             </section> <!--end minor-section-->
 
             <!--Key Takeaways-->
+            <div class="spacer"></div>
             <section class="box">
-              <div class="minor-section bg-top-margin limit-width"
-              <h4>Key Takeaways</h4>
-              <h5>
-                The purpose of the site was much more clear with the addition of the illustration.<br><br>
-                Navigation within the site needed to be quicker. Users were getting frustrated that they had to go into the menu to get anywhere, so I thought adding a bottom navigation bar would make the site more accessible.<br><br>
-                During one of my iterations, I had accidentally removed the “Create Listing” button from my navigation menu, so it was once again too difficult to find. I thought the bottom navigation bar would be a great place to include it.<br><br>
-                Users were still having a difficult time with page differentiation, even after adding color and style. I decided to do three things:
-              </h5>
-              <h5 class="text-center">
-                <br>Add page titles.<br><br>
-                Change the color of the search bar on some pages and add prompting text.<br><br>
-                Change the layout of the listing cards within the browse section of the site.<br><br>
-              </h5>
+              <div class="minor-section bg-top-margin limit-width">
+                <h4>Key Takeaways</h4>
+                <h5>
+                  The purpose of the site was much more clear with the addition of the illustration.<br><br>
+                  Navigation within the site needed to be quicker. Users were getting frustrated that they had to go into the menu to get anywhere, so I thought adding a bottom navigation bar would make the site more accessible.<br><br>
+                  During one of my iterations, I had accidentally removed the “Create Listing” button from my navigation menu, so it was once again too difficult to find. I thought the bottom navigation bar would be a great place to include it.<br><br>
+                  Users were still having a difficult time with page differentiation, even after adding color and style. I decided to do three things:
+                </h5>
+                <h5 class="text-center">
+                  <br>Add page titles.<br><br>
+                  Change the color of the search bar on some pages and add prompting text.<br><br>
+                  Change the layout of the listing cards within the browse section of the site.<br><br>
+                </h5>
+              </div>
             </section> <!--end minor-section-->
 
           </section> <!--end main-section (Visual Design)-->
@@ -519,7 +548,9 @@
               <a class="button mobile" href="https://www.figma.com/proto/RpwYz1yi41cxaSm5eVBam1/Sugar-Final?node-id=5%3A7&viewport=599%2C558%2C0.05390194430947304&scaling=scale-down">
                 <h4>Prototype</h4>
               </a>
-              <iframe style="border: none;" width="424" height="916" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRpwYz1yi41cxaSm5eVBam1%2FSugar-Final%3Fnode-id%3D5%253A7%26scaling%3Dmin-zoom" allowfullscreen class="desktop"></iframe>
+              <div class="prototype-embed">
+                <iframe style="border: none;" width="424" height="916" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRpwYz1yi41cxaSm5eVBam1%2FSugar-Final%3Fnode-id%3D5%253A7%26scaling%3Dmin-zoom" allowfullscreen class="desktop"></iframe>
+            </div>
             </section> <!--end minor-section-->
 
             <!--Conclusion-->
@@ -543,8 +574,8 @@
 
           <!--back to top-->
           <section class="back-to-top">
-            <a href="#top-of-proj">
-              <img src="images/back-to-top.png" alt="Back to top">
+            <a href="#top-of-proj" class="btt-img">
+              <!-- <img src="images/back-to-top.png" alt="Back to top"> -->
             </a>
           </section>
 
@@ -558,12 +589,8 @@
           <h5>macall.tanner@gmail.com</h5>
         </a>
         <div class="social">
-          <a href="https://www.linkedin.com/in/macalltanner/">
-            <img class="linkedin" src="images/icons/linkedin.png" alt="linkedin">
-          </a>
-          <a href="https://www.github.com/macalltanner">
-            <img class="github" src="images/icons/github.png" alt="github">
-          </a>
+          <a href="https://www.linkedin.com/in/macalltanner/" class="linkedin"></a>
+          <a href="https://www.github.com/macalltanner" class="github"></a>
         </div>
       </footer>
 
