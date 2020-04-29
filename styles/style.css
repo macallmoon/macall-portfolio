@@ -1057,10 +1057,6 @@ footer {
                   width: 5rem;
                 }
 
-                .sect > h6:hover {
-                  color: #D0CBC6;
-                }
-
                     .rd-sect {
                       flex-grow: 1;
                       justify-content: center;
@@ -1449,6 +1445,10 @@ footer {
         /* problem & solution */
 
         /* jump to section */
+
+        .sect > h6:hover {
+          color: #D0CBC6;
+        }
 
         /* case study sections */
 
