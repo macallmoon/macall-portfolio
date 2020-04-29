@@ -923,7 +923,7 @@ footer {
       padding: .7rem;
     }
 
-    .button > h4:hover {
+    .button:hover > h4 {
       color: #F8F5F0;
     }
 
@@ -1417,7 +1417,7 @@ footer {
           width: 90%;
         }
 
-        .project-button > h4:hover {
+        .project-button:hover > h4 {
           color: #F8F5F0;
         }
 
