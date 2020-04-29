@@ -1411,6 +1411,7 @@ footer {
 
         .proj-hero-img {
           background: none;
+          min-width: 400px;
           width: 40vw;
         }
 
