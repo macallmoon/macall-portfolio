@@ -206,6 +206,7 @@ footer {
 
         .img-constrain {
           width: 50%;
+          height: auto;
         }
 
             /* image on left - adding space between images */
