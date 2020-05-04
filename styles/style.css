@@ -1391,6 +1391,7 @@ footer {
         .box-bg {
           background-color: #F8F5F0;
           height: calc(38rem - 10vw);
+          min-height: 30rem;
           position: absolute;
           width: 100%;
           z-index: -1;
