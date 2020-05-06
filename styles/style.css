@@ -321,7 +321,6 @@ footer {
 
         .fav-items {
           display: grid;
-          flex-direction: row;
           grid-gap: 1rem;
           grid-template-columns: 1fr 1fr;
           padding-top: 2rem;
@@ -496,7 +495,6 @@ footer {
 
         .section-links {
           display: grid;
-          flex-direction: row;
           grid-gap: 1rem;
           grid-template-columns: 1fr 1fr;
           padding-top: 1.5rem;
@@ -1231,9 +1229,19 @@ footer {
 
             /* final design */
 
-            .prototype-embed {
-              display: flex;
-              justify-content: center;
+            .video-embed {
+              height: 0;
+              overflow: hidden;
+              padding-bottom: 105%;
+              position: relative;
+              margin: 2rem 0;
+            }
+
+            .video-embed > iframe {
+              left: 0;
+              top: 0;
+              height: 100%;
+              position: absolute;
             }
 
         /* back to top */
@@ -1350,12 +1358,7 @@ footer {
         }
 
         .feat-proj {
-          /* display: grid;
-          grid-gap: 3rem;
-          grid-template-columns: 1fr 1fr; */
           display: flex;
-          /* padding-left: 12rem;
-          padding-right: 12rem; */
         }
 
         .feat-imgs {
@@ -1377,7 +1380,7 @@ footer {
     /* contact page */
 
     .background-box {
-      height: 15.5rem;
+      height: 14.8rem;
     }
 
     .social-item > h5:hover {
@@ -1473,14 +1476,14 @@ footer {
 
             /* user Flows */
 
-            /* Wireframes */
-
-            .wireframes {
-              flex-direction: row;
+            .user-flows {
+              height: 30rem;
             }
 
-            .wireframes-text {
-              max-width: 40rem;
+            /* Wireframes */
+
+            .wireframes-bg {
+              height: 30rem;
             }
 
             /* usability testing - round 1 */
