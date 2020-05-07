@@ -266,6 +266,7 @@ footer {
           grid-area: two;
           height: 100%;
           object-fit: cover;
+          object-position: top;
           width: 100%;
         }
 
@@ -963,6 +964,18 @@ footer {
               text-decoration: none;
             }
 
+            .menu-work-home > h4 {
+              color: #F8F5F0;
+            }
+
+            .menu-about-home > h4 {
+              color: #F8F5F0;
+            }
+
+            .menu-contact-home > h4 {
+              color: #F8F5F0;
+            }
+
     /* home page */
 
         /* hero section */
@@ -1324,15 +1337,15 @@ footer {
         }
 
         .menu-work-home > h4:hover {
-          color: #F8F5F0;
+          color: #464646;
         }
 
         .menu-about-home > h4:hover {
-          color: #F8F5F0;
+          color: #464646;
         }
 
         .menu-contact-home > h4:hover {
-          color: #F8F5F0;
+          color: #464646;
         }
 
     /* footer */
