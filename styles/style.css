@@ -1255,6 +1255,7 @@ footer {
               top: 0;
               height: 100%;
               position: absolute;
+              width: 100%;
             }
 
         /* back to top */
