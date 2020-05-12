@@ -54,6 +54,11 @@ h6 {
   line-height: 1.6rem;
 }
 
+.h3 {
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -83,7 +88,7 @@ h6 {
 }
 
 .content-container {
-  padding-bottom: 10rem;
+  padding-bottom: calc(38rem - 20vw);
 }
 
 /*navigation bar*/
@@ -101,7 +106,7 @@ header {
       background-image: url(../images/macall-logo.png);
       background-size: cover;
       background-position: center center;
-      height: 62px;
+      height: 60px;
       grid-area: logo;
       width: 50px;
     }
@@ -126,12 +131,22 @@ footer {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  height: 10rem;
+  height: calc(38rem - 20vw);
   justify-content: center;
   position: absolute;
   width: 100%;
 
 }
+
+    .footer-text {
+      margin: 0 auto;
+      max-width: 50rem;
+      padding: 0 2rem 1rem;
+    }
+
+    .footer-text > h5 {
+      padding-top: .5rem;
+    }
 
     .email {
       text-align: center;
@@ -183,6 +198,14 @@ footer {
           justify-content: flex-end;
           padding: 2rem;
           text-align: right;
+        }
+
+        .hero-text > h1 {
+          color: #fff;
+        }
+
+        .hero-text > h2 {
+          color: #fff;
         }
 
     /* featured work section */
@@ -467,6 +490,18 @@ footer {
       padding: 1rem 0;
     }
 
+    /* evolution section */
+
+    .evolution {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2rem 3rem;
+      margin: 0 auto;
+      max-width: 50rem;
+    }
+
     /* jump to section */
 
     .jump {
@@ -566,8 +601,9 @@ footer {
         }
 
         .ca-img {
-          padding-bottom: .5rem;
-          width: 7.7rem;
+          margin-bottom: 1rem;
+          max-width: 250px;
+          width: 75%;
         }
 
         /* survey */
@@ -619,33 +655,24 @@ footer {
           width: 24.9rem;
         }
 
+        .top-pad {
+          padding-top: 1rem;
+        }
+
     /* information architecture */
 
         /* user Stories */
 
         /* user Flows */
 
-        .user-flows {
-          background-image: url("../images/sugar/user-flows.png");
-          background-repeat: no-repeat;
-          background-size: cover;
-          display: flex;
-          flex-direction: column;
-          height: 47.5rem;
-          justify-content: center;
+        .flow {
           padding-top: 2rem;
+          width: 100%;
         }
 
-        .flows-text {
-          background-color: #fff;
-          border-radius: 2rem;
-          padding: 1.9rem;
+        .bottom-margin-flow {
+          margin-bottom: 2rem;
         }
-
-        .flows-text > h4 {
-          padding-bottom: 1.5rem;
-        }
-
 
         /* Wireframes */
 
@@ -676,6 +703,22 @@ footer {
         /* usability testing - round 1 */
 
         /* key Takeaways */
+
+        .ut1-2 {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          max-width: 50%;
+        }
+
+        .ut1-2-img {
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+
+        .bottom-margin {
+          margin-bottom: 1.5rem;
+        }
 
     /* visual design & Branding */
 
@@ -905,6 +948,10 @@ footer {
       display: block;
     }
 
+    .content-container {
+      padding-bottom: 27rem;
+    }
+
     .button {
       border-radius: 1.7rem;
       margin-top: 1.7rem;
@@ -915,66 +962,27 @@ footer {
     header {
       grid-gap: 2rem;
       grid-template-areas:
-        "logo mwork mabout mcontact";
-      grid-template-columns: 3fr 1fr 1fr;
+        "logo buttons";
+      grid-template-columns: 1fr 1fr;
       padding: 3rem 6rem 1rem;
     }
 
-        .menu-work {
-          grid-area: mwork;
-          float: right;
+        .nav-buttons {
+          display: flex;
+          grid-area: buttons;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+
+        .nav-button {
+          margin-left: 5vw;
           padding-top: 1.5rem;
           text-decoration: none;
         }
 
-        .menu-about {
-          grid-area: mabout;
-          float: right;
-          padding-top: 1.5rem;
-          text-decoration: none;
-        }
-
-        .menu-contact {
-          grid-area: mcontact;
-          float: right;
-          padding-top: 1.5rem;
-          text-decoration: none;
-        }
-
-            /* home header */
-
-            .menu-work-home {
-              grid-area: mwork;
-              float: right;
-              padding-top: 1.5rem;
-              text-decoration: none;
-            }
-
-            .menu-about-home {
-              grid-area: mabout;
-              float: right;
-              padding-top: 1.5rem;
-              text-decoration: none;
-            }
-
-            .menu-contact-home {
-              grid-area: mcontact;
-              float: right;
-              padding-top: 1.5rem;
-              text-decoration: none;
-            }
-
-            .menu-work-home > h4 {
-              color: #F8F5F0;
-            }
-
-            .menu-about-home > h4 {
-              color: #F8F5F0;
-            }
-
-            .menu-contact-home > h4 {
-              color: #F8F5F0;
-            }
+    footer {
+      height: 27rem;;
+    }
 
     /* home page */
 
@@ -1044,6 +1052,8 @@ footer {
 
         /* problem & solution */
 
+        /* evolution section */
+
         /* jump to section */
 
         .jump-content {
@@ -1108,7 +1118,7 @@ footer {
             }
 
             .comp-analysis {
-              padding: 2rem 2rem 0;
+              padding: 2rem 1rem 0;
             }
 
             /* survey */
@@ -1138,15 +1148,6 @@ footer {
             /* user Stories */
 
             /* user Flows */
-
-            .user-flows {
-              background-image: url("../images/sugar/user-flows-desktop.png");
-            }
-
-            .flows-text {
-              max-width: 46rem;
-            }
-
 
             /* Wireframes */
 
@@ -1299,8 +1300,12 @@ footer {
       line-height: 30px;
     }
 
-    .button:hover > h4 {
-      color: #F8F5F0;
+    .content-container {
+      padding-bottom: 23rem;
+    }
+
+    .button:hover >h4 {
+      color: #353535;
     }
 
     /* header */
@@ -1311,56 +1316,29 @@ footer {
     }
 
     .logo:hover{
-      background-image: url(../images/macall-logo-light.png);
+      background-image: url(../images/macall-logo-darkest.png);
     }
 
-    .menu-work > h4:hover {
-      color: #D0CBC6;
+    .nav-button > h4:hover {
+      color: #353535;
     }
-
-    .menu-about > h4:hover {
-      color: #D0CBC6;
-    }
-
-    .menu-contact > h4:hover {
-      color: #D0CBC6;
-    }
-
-        /* home header */
-
-        .logo-home {
-          height: 93px;
-          width: 75px;
-        }
-
-        .logo-home:hover{
-          background-image: url(../images/macall-logo-lightest.png);
-        }
-
-        .menu-work-home > h4:hover {
-          color: #464646;
-        }
-
-        .menu-about-home > h4:hover {
-          color: #464646;
-        }
-
-        .menu-contact-home > h4:hover {
-          color: #464646;
-        }
 
     /* footer */
 
-    .email > h5:hover {
-      color: #F8F5F0;
+    footer {
+      height: 23rem;
+    }
+
+    .email > h4:hover {
+      color: #353535;
     }
 
         .linkedin:hover {
-          background-image: url(../images/icons/linkedin-light.png);
+          background-image: url(../images/icons/linkedin-darkest.png);
         }
 
         .github:hover {
-          background-image: url(../images/icons/github-light.png);
+          background-image: url(../images/icons/github-darkest.png);
         }
 
     /* home page */
@@ -1398,7 +1376,7 @@ footer {
     }
 
     .social-item > h5:hover {
-      color: #D0CBC6;
+      color: #353535;
     }
 
     /* project sugar page */
@@ -1451,7 +1429,7 @@ footer {
         }
 
         .project-button:hover > h4 {
-          color: #F8F5F0;
+          color: #353535;
         }
 
         .box-hero {
@@ -1466,10 +1444,22 @@ footer {
 
         /* problem & solution */
 
+        /* evolution section */
+
+        .evolution {
+          flex-direction: row;
+          max-width: 75vw;
+        }
+
+        .row-1 {
+          margin-right: 2rem;
+        }
+
         /* jump to section */
 
         .sect > h6:hover {
-          color: #D0CBC6;
+          color: #353535;
+          font-weight: 600;
         }
 
         /* case study sections */
@@ -1489,10 +1479,6 @@ footer {
             /* user Stories */
 
             /* user Flows */
-
-            .user-flows {
-              height: 30rem;
-            }
 
             /* Wireframes */
 
@@ -1521,7 +1507,7 @@ footer {
         /* back to top */
 
         .btt-img:hover {
-          background-image: url(../images/back-to-top-light.png);
+          background-image: url(../images/back-to-top-darkest.png);
         }
 
 }
