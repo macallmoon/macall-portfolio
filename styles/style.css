@@ -12,51 +12,46 @@ html {
   display: none;
 }
 
-h1, h2, h3, h4 {
+.h1, .h2, .h3, .h4 {
   color: #464646;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
-h1 {
+.h1 {
   font-size: 4.8rem;
   line-height: 6rem;
 }
 
-h2 {
+.h2 {
   font-size: 3rem;
   line-height: 4.5rem;
 }
 
-h3 {
+.h3 {
   font-size: 2.2rem;
   line-height: 3.3rem;
 }
 
-h4 {
+.h4 {
   font-size: 1.8rem;
   line-height: 2.7rem;
 }
 
-h5, h6 {
+.h5, .h6 {
   color: #464646;
   font-family: 'Spartan', sans-serif;
   font-weight: 400;
 }
 
-h5 {
+.h5 {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-h6 {
+.h6 {
   font-size: 1.2rem;
   line-height: 1.6rem;
-}
-
-.h3 {
-    font-size: 2.2rem;
-    line-height: 3.3rem;
 }
 
 .text-center {
@@ -189,7 +184,7 @@ footer {
       padding: 0 2rem 1rem;
     }
 
-    .footer-text > h5 {
+    .footer-text > .h5 {
       padding-top: .5rem;
     }
 
@@ -245,11 +240,11 @@ footer {
           text-align: right;
         }
 
-        .hero-text > h1 {
+        .hero-text > .h1 {
           color: #fff;
         }
 
-        .hero-text > h2 {
+        .hero-text > .h3 {
           color: #fff;
         }
 
@@ -284,7 +279,7 @@ footer {
               margin-right: 1rem;
             }
 
-        .feat-proj > h5 {
+        .feat-proj > .h5 {
           padding-top: 1rem;
         }
 
@@ -345,11 +340,11 @@ footer {
       padding: 2rem;
     }
 
-        .about-text > h4 {
+        .about-text > .h4 {
           padding-bottom: .5rem;
         }
 
-        .about-text > h2, .about-text > h5, .about-text > h4 {
+        .about-text > .h2, .about-text > .h5, .about-text > .h4 {
           padding-top: 2rem;
         }
 
@@ -439,11 +434,11 @@ footer {
       padding: 0 2rem;
     }
 
-    .proj-hero-text > h2 {
+    .proj-hero-text > .h2 {
       padding-top: 1rem;
     }
 
-    .proj-hero-text > h4 {
+    .proj-hero-text > .h4 {
       padding: .5rem 0;
     }
 
@@ -455,7 +450,7 @@ footer {
 
     /* specs */
 
-    .spec-section >h4 {
+    .spec-section > .h4 {
       padding: 2rem 0 1rem;
     }
 
@@ -467,11 +462,11 @@ footer {
       padding: 2rem 2rem 3rem;
     }
 
-    .prob-sol > h3 {
+    .prob-sol > .h3 {
       padding-top: 1rem;
     }
 
-    .prob-sol > h5 {
+    .prob-sol > .h5 {
       padding: 1rem 0;
     }
 
@@ -536,7 +531,7 @@ footer {
 
     /* case study sections */
 
-    .main-section > h3 {
+    .main-section > .h3 {
       margin: 0 auto;
       max-width: 50rem;
       padding: 5rem 2rem 0;
@@ -546,7 +541,7 @@ footer {
       padding: 0 2rem 1rem;
     }
 
-    .minor-section > h4 {
+    .minor-section > .h4 {
       padding: 2rem 0 1.5rem;
     }
 
@@ -563,7 +558,7 @@ footer {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
-    .h5-bottom-pad > h5 {
+    .h5-bottom-pad > .h5 {
       padding-bottom: 2rem;
     }
 
@@ -581,7 +576,7 @@ footer {
           padding: 2rem 0 0;
         }
 
-        .comp-analysis > h5 {
+        .comp-analysis > .h5 {
           padding-top: 1rem;
         }
 
@@ -599,12 +594,12 @@ footer {
           padding: .75rem 0;
         }
 
-        .survey-result > h3 {
+        .survey-result > .h3 {
           padding-right: 1rem;
           width: 7.6rem;
         }
 
-        .survey-result > h5 {
+        .survey-result > .h5 {
           width: 24.9rem;
         }
 
@@ -642,6 +637,7 @@ footer {
 
         .top-pad {
           padding-top: 1rem;
+          margin: 0 2rem;
         }
 
     /* information architecture */
@@ -681,7 +677,7 @@ footer {
           padding: 2rem 2rem 0;
         }
 
-        .wireframes-text > h4 {
+        .wireframes-text > .h4 {
           padding-bottom: 1.5rem;
         }
 
@@ -860,13 +856,24 @@ footer {
           font-weight: 300;
         }
 
+        .img-width-type {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 auto;
+          max-width: 25rem;
+          padding-top: 2rem;
+          width: 100%;
+        }
+
         /* logo */
 
         .minor-section-logo {
           padding: 0 2rem;
         }
 
-        .minor-section-logo > h4 {
+        .minor-section-logo > .h4 {
           padding: 2rem 0 1.5rem;
         }
 
@@ -992,7 +999,7 @@ footer {
           margin-top: 1rem;
         }
 
-        .feat-text > h5 {
+        .feat-text > .h5 {
           padding-top: 1rem;
         }
 
@@ -1044,7 +1051,7 @@ footer {
           max-width: none;
         }
 
-            .jump-content > h3 {
+            .jump-content > .h3 {
               margin: 0 auto;
               max-width: 50rem;
               padding: 0 2rem;
@@ -1086,7 +1093,7 @@ footer {
 
         /* case study sections */
 
-        .main-section > h3 {
+        .main-section > .h3 {
           padding: 7rem 2rem 0;
         }
 
@@ -1201,6 +1208,10 @@ footer {
               padding-bottom: 1rem;
             }
 
+            .img-width-type {
+              max-width: 20rem;
+            }
+
             /* logo */
 
             .desktop-proj-imgs {
@@ -1259,27 +1270,27 @@ footer {
       font-size: 15px;
     }
 
-    h1 {
+    .h1 {
       font-size: 72px;
       line-height: 90px;
     }
 
-    h2 {
+    .h2 {
       font-size: 54px;
       line-height: 81px;
     }
 
-    h3 {
+    .h3 {
       font-size: 36px;
       line-height: 54px;
     }
 
-    h4 {
+    .h4 {
       font-size: 24px;
       line-height: 36px;
     }
 
-    h5 {
+    .h5 {
       font-size: 18px;
       line-height: 30px;
     }
@@ -1288,7 +1299,7 @@ footer {
       padding-bottom: 23rem;
     }
 
-    .button:hover >h4 {
+    .button:hover > .h4 {
       color: #282828;
     }
 
@@ -1303,7 +1314,7 @@ footer {
       background-image: url(../images/macall-logo-darkest.png);
     }
 
-    .nav-button:hover > h4 {
+    .nav-button:hover > .h4 {
       color: #282828;
     }
 
@@ -1313,7 +1324,7 @@ footer {
       height: 23rem;
     }
 
-    .email > h4:hover {
+    .email > .h4:hover {
       color: #282828;
     }
 
@@ -1402,7 +1413,7 @@ footer {
           width: 90%;
         }
 
-        .project-button:hover > h4 {
+        .project-button:hover > .h4 {
           color: #282828;
         }
 
@@ -1431,7 +1442,7 @@ footer {
 
         /* jump to section */
 
-        .sect > h6:hover {
+        .sect > .h6:hover {
           color: #282828;
           font-weight: 600;
         }
