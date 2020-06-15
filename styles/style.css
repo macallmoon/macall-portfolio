@@ -273,6 +273,11 @@ footer {
           height: auto;
         }
 
+        .proj-desc-text {
+          width: 25rem;
+          margin: 0 auto;
+        }
+
             /* image on left - adding space between images */
 
             .left-img {
@@ -1495,4 +1500,46 @@ footer {
           background-image: url(../images/back-to-top-darkest.png);
         }
 
+}
+
+/* Coo project */
+
+.coo-h1 {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.coo-h2 {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.coo-h3 {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.coo-h4 {
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.coo-h5 {
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.coo-h6 {
+  font-family: 'Muli', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.three-imgs {
+  max-width: 100vw;
 }
